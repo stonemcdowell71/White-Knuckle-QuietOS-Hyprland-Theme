@@ -1,0 +1,112 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "BlockBlueprint", monospace;
+    font-weight: normal;
+    font-size: 40px;
+    min-height: 50px;
+}
+
+#custom-separator {
+    margin: 0 12px;
+    min-height: 0px;
+}
+
+#custom-switchuser {
+    background-color: transparent;
+    color: #fd9201
+}
+
+window#waybar {
+    background: rgba(29, 19, 9, 0.8);
+    border-bottom: 2px solid rgba(253, 146, 1, 1);
+    border-top: 2px solid rgba(253, 146, 1, 1);
+    border-left: 2px solid rgba(253, 146, 1, 1);
+    border-right: 2px solid rgba(253, 146, 1, 1);
+    color: #fd9201;
+}
+
+tooltip {
+    background: rgba(29, 19, 9, 1);
+    border: 1px solid rgba(29, 19, 9, 1);
+}
+tooltip label {
+    color: #fd9201;
+}
+
+#workspaces button.focused {
+    background: #64727D;
+    border-bottom: 3px solid #fd9201;
+}
+
+#mode, #clock, #battery {
+    padding: 0 20px;
+}
+
+#clock {
+    background-color: transparent;
+    color: #fd9201
+}
+
+#battery {
+    background-color: transparent;
+    color: #fd9201;
+}
+
+#battery.charging {
+    color: #fd9201;
+    background-color: transparent;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: transparent;
+    color: rgb(236, 39, 63);
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-power {
+    background-image: url("pathtopowersymbol");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+#custom-bell {
+    background-image: url("pathtobell");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 20px;
+    min-height: 36px;
+}
+
+#custom-roach {
+    background-image: url("path");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 38px;
+    min-height: 38px;
+}
+
+#custom-hash {
+    background-image: url("path");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 38px;
+    min-height: 38px;
+}

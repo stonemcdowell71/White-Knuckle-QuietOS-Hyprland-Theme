@@ -1,0 +1,77 @@
+{
+    "layer": "top",
+    "exclusive": true,
+    "modules-left": ["custom/gap","custom/power","custom/switchuser"],
+    "modules-center": ["battery"],
+    "modules-right": ["custom/quietos","custom/bell","custom/gap"],
+    "sway/window": {
+        "max-length": 50
+    },
+    
+    "custom/power": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "uwsm stop"
+    },
+
+    "custom/bell": {
+        "format": " ",
+        "tooltip": false
+    },
+
+    "custom/roach": {
+        "format": " ",
+        "tooltip": false
+    },
+
+    "custom/separator": {
+        "format": "│",
+        "tooltip": false
+    },
+
+    "custom/gap": {
+        "format": "  ",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+
+        "persistent-workspaces": {
+            "*": [1, 2, 3]
+        },
+
+        "format-icons": {
+            "1": "□",
+            "2": "□",
+            "3": "□",
+            "active": "■",
+            "default": "□"
+        }
+    },
+
+    "battery": {
+        "format": "[{capacity}]",
+        "format-charging": "[{capacity}]",
+        "format-discharging": "[{capacity}]",
+        "format-icons": ["▒▒▒▒██▒▒▒▒", "▒▒▒████▒▒▒", "▒▒██████▒▒", "▒████████▒", "██████████"],
+        "tooltip": false
+    },
+    
+    "clock": {
+        "format": "[{:%H:%M}]",
+        "tooltip": false
+    },
+
+    "custom/switchuser": {
+        "format": " Exit",
+        "tooltip": false
+    },
+
+    "custom/quietos": {
+        "format": "QuietOS ",
+        "tooltip": false
+    }
+}

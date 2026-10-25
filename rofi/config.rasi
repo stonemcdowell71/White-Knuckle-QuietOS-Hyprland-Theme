@@ -1,0 +1,7 @@
+@theme "~/.config/rofi/themes/orange-material.rasi"
+
+configuration {
+    modi: "drun";
+    cycle: false;
+    show-icons: false;
+}
